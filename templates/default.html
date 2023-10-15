@@ -49,14 +49,15 @@
 
     <main>
 
+      <script src="/iframeResizer.min.js"></script>
       <iframe 
         scrolling="no" 
         frameborder="0" 
         id="standwithpalestine" 
         width="100%" 
-        src="./banner.html"
+        src="/banner.html"
       ></iframe>
-      <script src="/banner.js"></script>
+      <script>iFrameResize({ log: true }, '#standwithpalestine')</script>
 
 
       $for(include-before)$
