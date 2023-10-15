@@ -5,7 +5,8 @@
    copy this snippet to your website
 
    ```html
-   <embed type="text/html" src="https://standwithpalestine.vercel.app/banner.html" width="100%">
+   <iframe scrolling="no" frameborder="0" id="standswithpalestine" width="100%" src="https://standwithpalestine.vercel.app/banner.html"></iframe>
+   <script src="https://standwithpalestine.vercel.app/banner.js"></script>
    ```
 
 1. github project
