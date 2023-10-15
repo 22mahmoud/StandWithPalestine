@@ -1,7 +1,9 @@
-const elm = document.getElementById("standswithpalestine");
+window.addEventListener("message", function (event) {
+  if (event.data?.type !== "standwithpalestine_height") return;
+  const height = event.data?.data?.height;
 
-elm.addEventListener("load", () => {
-  elm.height = elm.contentWindow.document.body.scrollHeight;
-  elm.width = elm.contentWindow.document.body.scrollWidth;
+  const elm = document.querySelector("#standswithpalestine");
+
+  elm.height = height;
+  elm.width = "100%";
 });
-
