@@ -292,12 +292,3 @@ footer {
 .nav ul li:not(:last-child) {
   margin-right: 0.8em;
 }
-
-.newsletter {
-  padding: 1em;
-  border: 1px solid rgb(var(--bg-3));
-  width: max-content;
-  border-radius: 4px;
-  box-shadow: 0 10px 15px -3px rgba(var(--bg-3), 0.1),
-    0 4px 6px -2px rgba(var(--bg-3), 0.05);
-}
