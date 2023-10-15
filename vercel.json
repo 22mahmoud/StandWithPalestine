@@ -1,0 +1,5 @@
+{
+  "buildCommand": "make install",
+  "installCommand": "make clean vercel",
+  "outputDirectory": "dist"
+}

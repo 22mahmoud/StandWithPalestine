@@ -1,0 +1,10 @@
+from: markdown
+to: html5
+standalone: true
+data-dir: .
+template: default.html
+metadata-file: metadata.yml
+css:
+  - /styles.css
+filters:
+  - img_filter.lua

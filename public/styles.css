@@ -1,0 +1,303 @@
+/* variables */
+:root {
+  /* fonts */
+  --sans: 1em/1.6 system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Oxygen, Ubuntu, Cantarell, Droid Sans, Helvetica Neue, Fira Sans, sans-serif;
+  --mono: SFMono-Regular, Consolas, "Liberation Mono", Menlo, Courier,
+    "Courier New", monospace;
+
+  /* colors */
+  --tx-1: 255, 255, 255;
+  --tx-2: 238, 238, 238;
+  --bg-1: 0, 0, 0;
+  --bg-2: 17, 17, 17;
+  --bg-3: 34, 34, 34;
+  --lk-1: 50, 145, 255;
+  --lk-2: 0, 112, 243;
+  --lk-tx: 255, 255, 255;
+  --ac-1: 121, 40, 202;
+  --ac-tx: 255, 255, 255;
+}
+
+*,
+:after,
+:before {
+  box-sizing: border-box;
+}
+
+address,
+area,
+article,
+aside,
+audio,
+blockquote,
+datalist,
+details,
+dl,
+fieldset,
+figure,
+form,
+input,
+iframe,
+img,
+meter,
+nav,
+ol,
+optgroup,
+option,
+output,
+p,
+pre,
+progress,
+ruby,
+section,
+table,
+textarea,
+ul,
+video {
+  /* Margins for most elements */
+  margin-bottom: 1rem;
+}
+
+hr {
+  /* Reset the border of the <hr> separator, then set a better line */
+  border: 0;
+  border-bottom: 1px solid rgb(var(--bg-3));
+  margin: 1rem auto;
+}
+
+body {
+  margin: 0 auto;
+  padding: 1em;
+  font: var(--sans);
+  font-weight: 400;
+  line-height: 1.5;
+  background: rgb(var(--bg-1));
+  color: rgb(var(--tx-1));
+  max-width: 50em;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+main {
+  flex: 1;
+}
+
+figure {
+  max-width: 98%;
+  margin: 0 auto;
+}
+
+figcaption,
+figure.fullwidth figcaption {
+  margin-right: 0%;
+  max-width: none;
+}
+
+img,
+video {
+  height: auto;
+  max-width: 100%;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.3em;
+}
+
+textarea,
+select,
+input {
+  padding: 6px 12px;
+  margin-bottom: 0.5rem;
+  background: rgb(var(--bg-3));
+  color: rgb(var(--tx-1));
+
+  /* Set a transparent border. It isn't visible on idle, but prevents the cell from growing in size when a darker border is set on focus. */
+  border: 1px solid transparent;
+  border-radius: 4px;
+  box-shadow: none;
+  box-sizing: border-box;
+}
+
+a {
+  color: rgb(var(--lk-1));
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+pre {
+  font: 1em/1.6 var(--mono);
+  background: rgb(var(--bg-3));
+  color: rgb(var(--tx-1));
+  padding: 1em;
+  overflow: auto;
+}
+
+code {
+  font: 1em/1.6 var(--mono);
+  color: rgb(var(--tx-1));
+}
+
+.sourceCode .kw {
+  color: #7aa2f7;
+}
+
+.sourceCode .dt {
+  color: #7aa2f7;
+}
+
+.sourceCode .dv,
+.sourceCode .bn,
+.sourceCode .fl {
+  color: #d06ba7;
+}
+
+.sourceCode .ch {
+  color: #d46967;
+}
+
+.sourceCode .st {
+  color: #5caebd;
+}
+
+.sourceCode .co {
+  color: #6e767e;
+}
+
+.sourceCode .ot {
+  color: #b6850e;
+}
+
+.sourceCode .al {
+  color: #cc6d0d;
+  font-weight: bold;
+}
+
+.sourceCode .fu {
+  color: #7aa2f7;
+}
+
+.sourceCode .re {
+  color: #d06c6e;
+}
+
+.sourceCode .er {
+  color: #d06c6e;
+  font-weight: bold;
+}
+
+blockquote {
+  border-left: 5px solid rgb(var(--bg-3));
+  color: rgb(var(--tx-2));
+  padding: 1em 1.5em;
+  margin: 0;
+}
+
+/* Headlines */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1;
+  padding-top: 0.875rem;
+}
+
+h1,
+h2,
+h3 {
+  padding-bottom: 2px;
+  margin-bottom: 8px;
+}
+
+h4,
+h5,
+h6 {
+  margin-bottom: 0.3rem;
+}
+
+h1 {
+  font-size: 2.25rem;
+}
+
+h2 {
+  font-size: 1.85rem;
+}
+
+h3 {
+  font-size: 1.55rem;
+}
+
+h4 {
+  font-size: 1.25rem;
+}
+
+h5 {
+  font-size: 1rem;
+}
+
+h6 {
+  font-size: 0.875rem;
+}
+
+ol,
+ul {
+  /* Replace the browser default padding */
+  padding-left: 2rem;
+}
+
+li {
+  margin-top: 0.4rem;
+}
+
+ul ul,
+ol ul,
+ul ol,
+ol ol {
+  margin-bottom: 0;
+}
+
+footer {
+  padding-top: 1.5em;
+  padding-bottom: 1em;
+}
+
+.site-title a {
+  color: rgb(var(--tx-1));
+  font-weight: bold;
+}
+
+.nav {
+  margin-bottom: 1em;
+}
+
+.nav ul {
+  display: flex;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.nav ul li {
+  list-style-type: none;
+  margin-bottom: 0.3em;
+}
+
+.nav ul li:not(:last-child) {
+  margin-right: 0.8em;
+}
+
+.newsletter {
+  padding: 1em;
+  border: 1px solid rgb(var(--bg-3));
+  width: max-content;
+  border-radius: 4px;
+  box-shadow: 0 10px 15px -3px rgba(var(--bg-3), 0.1),
+    0 4px 6px -2px rgba(var(--bg-3), 0.05);
+}
