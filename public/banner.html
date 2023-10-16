@@ -1,163 +1,174 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=no, viewport-fit=cover"
+    />
+    <link rel="alternate" type="application/atom+xml" href="/rss.xml" />
+    <link rel="shortcut icon" href="./favicon.ico" />
+    <title>StandWithPalestine banner</title>
+    <style>
+      :root {
+        --sans: 1em/1.6 system-ui, -apple-system, BlinkMacSystemFont, Segoe UI,
+          Roboto, Oxygen, Ubuntu, Cantarell, Droid Sans, Helvetica Neue,
+          Fira Sans, sans-serif;
+      }
 
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport"
-    content="minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=no, viewport-fit=cover" />
-  <link rel="alternate" type="application/atom+xml" href="/rss.xml" />
-  <link rel="shortcut icon" href="./favicon.ico" />
-  <title>StandWithPalestine banner</title>
-  <style>
-    :root {
-      --sans: 1em/1.6 system-ui, -apple-system, BlinkMacSystemFont, Segoe UI,
-        Roboto, Oxygen, Ubuntu, Cantarell, Droid Sans, Helvetica Neue,
-        Fira Sans, sans-serif;
-    }
+      *,
+      :after,
+      :before {
+        box-sizing: border-box;
+      }
 
-    *,
-    :after,
-    :before {
-      box-sizing: border-box;
-    }
+      a {
+        color: black;
+        text-decoration: none;
+      }
 
-    a {
-      color: black;
-      text-decoration: none;
-    }
+      html {
+        height: 100%;
+        width: 100%;
+      }
 
-    html {
-      height: 100%;
-      width: 100%;
-    }
+      body {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        width: 100%;
+        font: var(--sans);
+      }
 
-    body {
-      width: 100%;
-      height: 100%;
-      margin: 0;
-      padding: 0;
-      height: 100%;
-      width: 100%;
-      font: var(--sans);
-    }
+      .wrapper {
+        aspect-ratio: 16/9;
+        max-height: 300px;
+        max-width: 100%;
+      }
 
-    .wrapper {
-      aspect-ratio: 16/9;
-      max-height: 300px;
-      max-width: 100%;
-    }
+      .banner .footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: darkgreen;
+        color: white;
+      }
 
-    .banner .footer {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background: darkgreen;
-      color: white;
-    }
+      .banner .footer .message {
+        font-weight: 700;
+        font-size: 16px;
+      }
 
-    .banner .footer .message {
-      font-weight: 700;
-      font-size: 16px;
-    }
+      .banner {
+        background: black;
+        color: white;
+        border: 4px solid black;
+      }
 
-    .banner {
-      background: black;
-      color: white;
-      border: 4px solid black;
-    }
+      .banner .message {
+        padding: 5px 10px;
+        font-weight: 500;
+        font-size: 21px;
+      }
 
-    .banner .message {
-      padding: 5px 10px;
-      font-weight: 500;
-      font-size: 21px;
-    }
+      .banner .message p {
+        margin: 0;
+      }
 
-    .banner .message p {
-      margin: 0;
-    }
+      .palestine-flag {
+        position: relative;
+        width: 100%;
+        height: 50px;
+        display: flex;
+        flex-direction: column;
+        border: 2px solid white;
+      }
 
-    .palestine-flag {
-      position: relative;
-      width: 100%;
-      height: 50px;
-      display: flex;
-      flex-direction: column;
-      border: 2px solid white;
-    }
+      .palestine-flag .block {
+        flex: 1;
+        width: 100%;
+      }
 
-    .palestine-flag .block {
-      flex: 1;
-      width: 100%;
-    }
+      .black {
+        background-color: black;
+      }
 
-    .black {
-      background-color: black;
-    }
+      .white {
+        background-color: white;
+        color: red;
+      }
 
-    .white {
-      background-color: white;
-      color: red;
-    }
+      .green {
+        background-color: darkgreen;
+      }
 
-    .green {
-      background-color: darkgreen;
-    }
+      .red {
+        width: 0px;
+        height: 0px;
+        border-top: 25px solid transparent;
+        border-bottom: 25px solid transparent;
+        border-left: 25px solid #c81025;
+        z-index: 1;
+        position: absolute;
+        top: 0px;
+      }
+    </style>
+  </head>
 
-    .red {
-      width: 0px;
-      height: 0px;
-      border-top: 25px solid transparent;
-      border-bottom: 25px solid transparent;
-      border-left: 25px solid #c81025;
-      z-index: 1;
-      position: absolute;
-      top: 0px;
-    }
-  </style>
-</head>
+  <body>
+    <div class="root" data-iframe-height>
+      <a
+        href="https://standwithpalestine.vercel.app"
+        target="_blank"
+        rel="noopener"
+      >
+        <div class="banner">
+          <div class="message">
+            <p>this is a message</p>
+            <p>this is a message</p>
+            <p>this is a message</p>
+            <p>this is a message</p>
+            <p>this is a message</p>
+            <p>this is a message</p>
+            <p>this is a message</p>
+            <p>this is a message</p>
+            <p>this is a message</p>
+            <p>this is a message</p>
+            <p>this is a message</p>
+            <p>this is a message</p>
+            <p>this is a message</p>
+          </div>
+          <div class="palestine-flag">
+            <div class="block black"></div>
+            <div class="block white"></div>
+            <div class="block green"></div>
+            <div class="red"></div>
+          </div>
 
-<body class="root">
-  <a href="https://standwithpalestine.vercel.app" target="_blank" rel="noopener">
-    <div class="banner">
-      <div class="message">
-        <p>this is a message</p>
-        <p>this is a message</p>
-        <p>this is a message</p>
-        <p>this is a message</p>
-        <p>this is a message</p>
-        <p>this is a message</p>
-        <p>this is a message</p>
-        <p>this is a message</p>
-        <p>this is a message</p>
-        <p>this is a message</p>
-        <p>this is a message</p>
-        <p>this is a message</p>
-        <p>this is a message</p>
-      </div>
-      <div class="palestine-flag">
-        <div class="block black"></div>
-        <div class="block white"></div>
-        <div class="block green"></div>
-        <div class="red"></div>
-      </div>
-
-      <div class="footer">
-        <div class="message">
-          <p>HELP PALSTINE NOW</p>
+          <div class="footer">
+            <div class="message">
+              <p>HELP PALSTINE NOW</p>
+            </div>
+          </div>
         </div>
-      </div>
+      </a>
     </div>
-  </a>
 
-  <script>
-    window.va =
-      window.va ||
-      function () {
-        (window.vaq = window.vaq || []).push(arguments);
+    <script>
+      window.va =
+        window.va ||
+        function () {
+          (window.vaq = window.vaq || []).push(arguments);
+        };
+    </script>
+    <script defer src="/_vercel/insights/script.js"></script>
+    <script>
+      window.iFrameResizer = {
+        heightCalculationMethod: "taggedElement",
       };
-  </script>
-  <script defer src="/_vercel/insights/script.js"></script>
-  <script src="/iframeResizer.contentWindow.min.js"></script>
-</body>
-
+    </script>
+    <script src="/iframeResizer.contentWindow.min.js"></script>
+  </body>
 </html>
