@@ -5,8 +5,9 @@
    copy this snippet to your website
 
    ```html
-   <iframe scrolling="no" frameborder="0" id="standwithpalestine" width="100%" src="https://standwithpalestine.vercel.app/banner.html"></iframe>
-   <script src="https://standwithpalestine.vercel.app/banner.js"></script>
+   <script src="https://standwithpalestine.vercel.app/iframeResizer.min.js"></script>
+   <iframe frameborder="0" id="standwithpalestine" width="100%" src="https://standwithpalestine.vercel.app/banner.html"></iframe>
+   <script>iFrameResize({ log: false }, '#standwithpalestine')</script>
    ```
 
 1. github project
