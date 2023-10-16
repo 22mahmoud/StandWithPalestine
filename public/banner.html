@@ -23,8 +23,12 @@
       }
 
       a {
-        color: black;
+        color: white;
         text-decoration: none;
+      }
+
+      p {
+        margin: 0;
       }
 
       html {
@@ -42,39 +46,27 @@
         font: var(--sans);
       }
 
-      .wrapper {
-        aspect-ratio: 16/9;
-        max-height: 300px;
-        max-width: 100%;
-      }
-
-      .banner .footer {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+      .footer {
+        border-top: 2px solid white;
         background: darkgreen;
-        color: white;
-      }
-
-      .banner .footer .message {
-        font-weight: 700;
-        font-size: 16px;
-      }
-
-      .banner {
-        background: black;
-        color: white;
-        border: 4px solid black;
-      }
-
-      .banner .message {
         padding: 5px 10px;
         font-weight: 500;
         font-size: 21px;
       }
 
-      .banner .message p {
-        margin: 0;
+      .banner {
+        background: black;
+        color: white;
+        border: 1px solid white;
+      }
+
+      .header {
+        letter-spacing: 5px;
+        font-weight: 700;
+        font-size: 16px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
       }
 
       .palestine-flag {
@@ -83,7 +75,7 @@
         height: 50px;
         display: flex;
         flex-direction: column;
-        border: 2px solid white;
+        border-top: 2px solid white;
       }
 
       .palestine-flag .block {
@@ -97,7 +89,6 @@
 
       .white {
         background-color: white;
-        color: red;
       }
 
       .green {
@@ -125,9 +116,10 @@
         rel="noopener"
       >
         <div class="banner">
-          <div class="message">
-            <p>this is a message this is a message this is a message this is a message</p>
+          <div class="header">
+            <p>HELP PALSTINE NOW</p>
           </div>
+
           <div class="palestine-flag">
             <div class="block black"></div>
             <div class="block white"></div>
@@ -136,9 +128,10 @@
           </div>
 
           <div class="footer">
-            <div class="message">
-              <p>HELP PALSTINE NOW</p>
-            </div>
+            <p>
+              this is a message this is a message this is a message this is a
+              message
+            </p>
           </div>
         </div>
       </a>
