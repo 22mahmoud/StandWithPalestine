@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="155" height="20" role="img" aria-label="#StandWithPalestine: 🇵🇸">
+  <title>#StandWithPalestine: 🇵🇸</title>
+  <linearGradient id="s" x2="0" y2="100%">
+    <stop offset="0" stop-color="#bbb" stop-opacity=".1"/>
+    <stop offset="1" stop-opacity=".1"/>
+  </linearGradient>
+  <clipPath id="r">
+    <rect width="155" height="20" rx="3" fill="#fff" />
+  </clipPath>
+
+  <g clip-path="url(#r)">
+    <rect width="119" height="20" fill="#555" />
+    <rect x="119" width="50" height="6.66666666" fill="black"/>
+    <rect x="119" y="6.66666666" width="50" height="7.6666666" fill="white"/>
+    <rect x="119" y="13.6666666" width="50" height="6.6666666" fill="darkgreen"/>
+    <path fill="#ED2E38" d="M 119 -1 L 131 9.5 L 119 20 L 119 -1 Z"/>
+    <rect width="155" height="20" fill="url(#s)"/>
+  </g>
+
+  <g fill="#fff" text-anchor="middle" font-family="Verdana,Geneva,DejaVu Sans,sans-serif" text-rendering="geometricPrecision" font-size="110">
+    <text aria-hidden="true" x="605" y="150" fill="#010101" fill-opacity=".3" transform="scale(.1)" textLength="1090">
+      #StandWithPalestine
+    </text>
+    <text x="605" y="140" transform="scale(.1)" fill="#fff" textLength="1090">
+      #StandWithPalestine
+    </text>
+  </g>
+</svg>
