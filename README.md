@@ -1,6 +1,8 @@
 
 [![Stand With Palestine](https://raw.githubusercontent.com/22mahmoud/StandWithPalestine/main/public/StandWithPalestine.svg)](https://standwithpalestine.vercel.app)
 
+<a href="https://standwithpalestine.vercel.app"><img src="https://standwithpalestine.vercel.app/banner.png"></a>
+
 This repository contains Readme Banners (and some useful docs) that can be used
 by OSS projects and websites to spread the word, support and help Palestine in this
 disastrous situation.
